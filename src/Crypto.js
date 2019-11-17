@@ -76,6 +76,7 @@ class Crypto extends Component {
     render() {
         return (
             <div className="crypto">
+                <h2>Kurs wymiany BTC</h2>
                 <input type="text" onChange={this.filterCrypto} ref={ input=> this.filterInput = input } />
                 <CryptoList cryptoArray={this.state.filteredCryptoArray}  />
             </div>
